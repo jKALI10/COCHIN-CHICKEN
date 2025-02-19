@@ -13,16 +13,16 @@ $(document).ready(function ($) {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 3500, // Slightly slower autoplay
       disableOnInteraction: false,
     },
-    speed: 2000,
+    speed: 1500, // Reduced speed for smoother transitions
     effect: "coverflow",
     coverflowEffect: {
-      rotate: 3,
-      stretch: 2,
-      depth: 100,
-      modifier: 5,
+      rotate: 2, // Decreased rotation for less dramatic effect
+      stretch: 1,
+      depth: 80, // Decreased depth for less emphasis on coverflow
+      modifier: 3, // Reduced modifier for a subtler effect
       slideShadows: false,
     },
     navigation: {
@@ -38,13 +38,13 @@ $(document).ready(function ($) {
   /** ✅ Swiper Slider for Team **/
   var team_slider = new Swiper(".team-slider", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20, // Reduced space between slides
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 3500, // Slightly slower autoplay
       disableOnInteraction: false,
     },
-    speed: 2000,
+    speed: 1500, // Reduced speed for smoother transitions
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -56,7 +56,7 @@ $(document).ready(function ($) {
     breakpoints: {
       0: { slidesPerView: 1.2 },
       768: { slidesPerView: 2 },
-      992: { slidesPerView: 3 },
+      992: { slidesPerView: 2 }, // Reduced slides on medium screens
       1200: { slidesPerView: 3 },
     },
   });
@@ -76,7 +76,7 @@ $(document).ready(function ($) {
           },
           animation: {
             effects: "fade",
-            easing: "ease-in-out",
+            easing: "ease-in-out", // Smooth easing for the animation
           },
           load: {
             filter: ".all, .breakfast, .lunch, .dinner",
@@ -125,7 +125,7 @@ jQuery(window).on("load", function () {
         if (animation && animation.isActive()) {
           animation.progress(1);
         }
-        animation = gsap.timeline({ defaults: { duration: 0.4 } });
+        animation = gsap.timeline({ defaults: { duration: 0.3 } }); // Reduced duration for faster tab animation
         old = activeTab;
         activeTab = this.index;
         animation.to(".filter-active", {
@@ -142,4 +142,16 @@ jQuery(window).on("load", function () {
       targets[i].addEventListener("click", moveBar);
     }
   }
+});
+
+let scrollTimeout;
+
+window.addEventListener("scroll", function () {
+  if (scrollTimeout) {
+    cancelAnimationFrame(scrollTimeout);
+  }
+
+  scrollTimeout = requestAnimationFrame(function () {
+    // Your scroll-related code here
+  });
 });

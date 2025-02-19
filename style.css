@@ -366,7 +366,6 @@ ul {
         transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
         overflow-y: auto;
         transform: translateY(-100%);
-        background-image: url(assets/images/blog-pattern-bg.png);
         background-position: center;
         background-color: #f3f3f5;
     }
@@ -1114,38 +1113,6 @@ p {
     width: 30px;
 }
 
-/* *************** */
-
-.team-slider {
-    position: relative;
-}
-
-.team-box {
-    padding: 20px;
-    border-radius: 30px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 45px #e6e6e6, -28px -28px 45px #ffffff;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-}
-
-.team-box:hover {
-    transform: scale(1.03);
-}
-
-.team-img {
-    width: 100%;
-    height: 480px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 9px 9px 18px rgb(194 194 194 /0.5), -9px -9px 18px rgb(255 255 255 / 0.5);
-}
-
-.team-box .h3-title {
-    text-transform: capitalize;
-    color: #0d0d25;
-    font-weight: 600;
-}
-
 .social-icon {
     margin: 15px 0px 10px;
 }
@@ -1182,65 +1149,6 @@ p {
 
 .social-icon ul li a:hover i {
     color: #ffffff !important;
-}
-
-/* *************** */
-
-.testimonials-img {
-    position: relative;
-}
-
-.testimonials-img img {
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    width: calc(100% + 5vw);
-    max-width: initial;
-}
-
-.testimonials-box {
-    display: flow-root;
-    position: relative;
-    padding: 30px;
-    padding-top: 0;
-    border-radius: 30px;
-    margin: 50px 0 30px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 45px #e6e6e6, -28px -28px 45px #ffffff;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-}
-
-.testimonials-box:hover {
-    transform: scale(1.05);
-    z-index: 2;
-}
-
-.testimonial-box-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.testimonials-box-img {
-    min-width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    margin-top: -50px;
-    box-shadow: 10px 10px 60px #d4d4d4;
-}
-
-.testimonials-box-text .h3-title {
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
-
-.testimonials-box-text p {
-    margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .star-rating-wp {
@@ -1284,120 +1192,6 @@ p {
     0% {
         width: 0;
     }
-}
-
-/* *********** */
-
-.faq-row {
-    column-count: 3;
-    margin: 0 -5px;
-}
-
-.faq-box {
-    border: 1px solid #bfbfbf;
-    border-radius: 30px;
-    background-image: linear-gradient(145deg, #e4e4e4, #ffffff);
-    break-inside: avoid;
-    margin: 0 5px 30px;
-    box-shadow: 10px 10px 30px rgb(207 207 208 / 20%), -10px -10px 30px rgb(255 255 255 / 90%);
-}
-
-.faq-box .h4-title {
-    padding: 16px 30px;
-    border-bottom: 1px solid #bfbfbf;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
-.faq-box p {
-    padding: 8px 30px 20px;
-    margin: 0;
-}
-
-/* *************** */
-
-.blog-text .h4-title {
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-weight: 900;
-    font-family: "playfair Display";
-    color: #0d0d25;
-    transition: 0.3s;
-}
-
-.blog-text .h4-title:hover {
-    color: #ff8243;
-}
-
-.blog-date {
-    padding: 5px 15px;
-    background: #f8f9fa;
-    box-shadow: inset 5px 5px 10px #e2e2e2, inset -5px -5px 10px #e8e8e8;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.blog-img {
-    width: 100%;
-    height: 280px;
-    border-radius: 30px;
-    margin-bottom: 20px;
-}
-
-.blog-box {
-    padding: 30px 25px;
-    border-radius: 30px;
-    background: linear-gradient(145deg, #ececec, #fdfdfd);
-    box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-    margin-bottom: 30px;
-}
-
-.blog-box:hover {
-    transform: scale(1.03);
-}
-
-/* ************************ */
-
-.newsletter-box {
-    padding: 60px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.newsletter-form {
-    margin-top: 20px;
-    position: relative;
-}
-
-.newsletter-form button {
-    position: absolute;
-    right: 6px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.newsletter-form .form-input {
-    height: 68px;
-    border-radius: 60px;
-    padding: 0 150px 0 40px;
-    background: linear-gradient(-145deg, #e4e4e4, #f9f9f9);
-}
-
-.newsletter-box-text {
-    padding: 0 60px;
-    color: #ffffff;
-}
-
-.newsletter-box-text .h2-title {
-    color: #ffffff;
 }
 
 .bg-overlay {
@@ -1554,14 +1348,6 @@ p {
         line-height: 48px;
     }
 
-    .team-img {
-        height: 400px;
-    }
-
-    .blog-box {
-        padding: 30px 20px;
-    }
-
     .dist-bottom-row ul li b {
         font-size: 25px;
     }
@@ -1596,51 +1382,12 @@ p {
         padding: 0;
     }
 
-    .team-img {
-        height: 340px;
-    }
-
-    .testimonials-box {
-        padding: 30px 20px;
-        margin: 26px 0 30px;
-    }
-
-    .testimonials-box-img {
-        min-width: 80px;
-        min-height: 80px;
-        margin-top: -80px;
-    }
-
-    .faq-box .h4-title {
-        padding: 16px 20px;
-    }
-
-    .faq-box p {
-        padding: 8px 20px 20px;
-    }
-
-    .blog-img {
-        height: 240px;
-    }
-
-    .newsletter-box-text {
-        padding: 0;
-    }
-
     .footer-flex-box>div {
         padding: 0 10px;
     }
 
     .star-rating {
         font-size: 19px;
-    }
-
-    .testimonial-box-top {
-        margin-bottom: 10px;
-    }
-
-    .call-now a {
-        font-size: 28px;
     }
 
     .menu-box {
@@ -1672,14 +1419,6 @@ p {
         padding-top: 50px;
     }
 
-    .brands-box {
-        padding: 0 30px;
-    }
-
-    .brands-row {
-        margin: 0 -30px;
-    }
-
     .menu-tab ul {
         white-space: nowrap;
         overflow: hidden;
@@ -1703,39 +1442,8 @@ p {
         margin-top: 40px;
     }
 
-    .call-now {
-        border: none;
-        margin: 40px 0;
-        border-top: 3px dotted rgb(13 13 17 / 50%);
-        border-bottom: 3px dotted rgb(13 13 17 / 50%);
-        padding: 30px 0;
-    }
-
-    .book-table-info {
-        max-width: 300px;
-        margin: 30px auto 0;
-    }
-
     .swiper-button-wp .swiper-button {
         display: none !important;
-    }
-
-    .testimonials-img img {
-        position: unset;
-        width: 100%;
-    }
-
-    .testimonials-img {
-        margin-bottom: 60px;
-    }
-
-    .faq-row {
-        column-count: 1;
-        margin: 0;
-    }
-
-    .newsletter-box {
-        padding: 40px;
     }
 
     .footer-info {
@@ -1849,10 +1557,6 @@ p {
         height: 60vh;
     }
 
-    .team-img {
-        height: 430px;
-    }
-
     .dish-info ul li p {
         font-size: 16px;
         line-height: 26px;
@@ -1861,14 +1565,6 @@ p {
 
     .dish-info ul li b {
         font-size: 14px;
-    }
-
-    .brands-box {
-        padding: 0 25px;
-    }
-
-    .brands-row {
-        margin: 0 -25px;
     }
 
     .menu-tab ul li {
@@ -1897,57 +1593,10 @@ p {
         height: 90vw;
     }
 
-    .about-video-img {
-        height: 30vw;
-        min-height: 280px;
-        border-radius: 30px;
-    }
-
-    .brands-box {
-        padding: 0 15px;
-        flex: 0 0 33%;
-        margin-bottom: 30px;
-    }
-
-    .brands-row {
-        margin: 0 -15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .dish-box {
         max-width: 340px;
         margin: 80px auto 30px;
         padding: 0 0 30px;
-    }
-
-    .blog-sec.section {
-        padding-bottom: 0;
-    }
-
-    .brands-box img {
-        max-width: 80%;
-    }
-
-    .brand-title {
-        text-align: center;
-    }
-
-    .play-btn {
-        width: 70px;
-        height: 70px;
-    }
-
-    .play-btn-wp span {
-        font-size: 18px;
-    }
-
-    .newsletter-box {
-        padding: 15px;
-    }
-
-    .newsletter-form .form-input {
-        padding: 0 130px 0 12px;
     }
 
     .menu-box {
@@ -1969,12 +1618,6 @@ p {
     }
 }
 
-@media (max-width: 480px) {
-    .team-img {
-        height: 330px;
-    }
-}
-
 @media (max-width: 400px) {
 
     .container,
@@ -1986,31 +1629,29 @@ p {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+}
 
-    .newsletter-form button {
-        position: unset;
-        transform: translate(0);
-        box-shadow: none !important;
-        margin-top: 20px;
+/* Make sure the logo is responsive */
+.logo {
+    max-width: 100%;
+    height: auto;
+    /* Keeps the aspect ratio intact */
+}
+
+/* Optional: Adjust logo size for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%;
+        /* You can adjust the max-width depending on how much space you want */
+        height: auto;
     }
+}
 
-    .newsletter-form .form-input {
-        padding: 0 30px;
-    }
-
-    .team-box .h3-title {
-        min-height: 72px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .team-img {
-        height: 280px;
-    }
-
-    .blog-box {
-        padding: 20px;
+/* For very small screens like mobile */
+@media (max-width: 480px) {
+    .logo {
+        max-width: 70%;
+        /* Adjust as needed */
+        height: auto;
     }
 }
