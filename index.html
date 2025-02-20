@@ -533,6 +533,14 @@
     <!-- custom js  -->
     <script src="main.js"></script>
 
+    <!-- Vercel Analytics (Add right before </body> tag) -->
+    <script src="https://cdn.vercel-insights.com/analytics.js"></script>
+    <script>
+        if (window.VercelAnalytics) {
+            VercelAnalytics.init(); // Initialize the Vercel Analytics on your site
+        }
+    </script>
+
 </body>
 
 </html>
