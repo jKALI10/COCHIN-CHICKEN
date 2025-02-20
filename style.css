@@ -201,24 +201,46 @@ ul {
     }
 }
 
+/* Default container for smaller screens */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* Adjust the max-width according to your layout needs */
+    margin: 0 auto;
+    /* Centers the container */
+    padding: 0 15px;
+    /* Optional: Adds padding for smaller screens */
+}
+
+/* Medium screen sizes (tablets) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+        /* Adjust for medium screens */
+    }
+}
+
+/* Large screen sizes (desktops) */
 @media (min-width: 1500px) {
     .container {
         max-width: 1368px;
     }
 }
 
+/* Extra large screen sizes (very large screens) */
 @media (min-width: 2100px) {
     .container {
         max-width: 1400px;
     }
+}
 
-    p,
-    body,
-    button,
-    input {
-        font-size: 18px;
-        line-height: 32px;
-    }
+p,
+body,
+button,
+input {
+    font-size: 18px;
+    line-height: 32px;
+}
 }
 
 @media (max-width: 1399px) {
@@ -1241,106 +1263,128 @@ p {
 
 /* **************** responsiveness ***************** */
 
-@media (min-width: 2100px) {
+/* Default Container Styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* Adjust based on your default container size */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Large screens (1500px and up) */
+@media (min-width: 1500px) {
     .container {
-        max-width: 1400px;
+        max-width: 1368px;
     }
 
     p,
     body,
     button,
     input {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 2rem;
+        /* 32px */
     }
 }
 
+/* Very large screens (2100px and up) */
+@media (min-width: 2100px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Medium Screens (max-width: 1399px) */
 @media (max-width: 1399px) {
     .h1-title {
-        font-size: 80px;
-        line-height: 90px;
+        font-size: 5rem;
+        line-height: 5.625rem;
     }
 
+    /* 80px, 90px */
     .h3-title {
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 1.625rem;
+        line-height: 2.25rem;
     }
 
+    /* 26px, 36px */
     .h4-title {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
     }
 
+    /* 24px, 34px */
     .h2-title {
-        font-size: 38px;
-        line-height: 48px;
+        font-size: 2.375rem;
+        line-height: 3rem;
     }
 
+    /* 38px, 48px */
     .dist-bottom-row ul li b {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
+
+    /* 25px */
 }
 
+/* Small screens (max-width: 1199px) */
 @media (max-width: 1199px) {
     .main-banner {
-        padding: 200px 0;
+        padding: 12.5rem 0;
     }
 
+    /* 200px */
     .banner-img-wp {
-        height: 360px;
+        height: 22.5rem;
     }
 
+    /* 360px */
     .dish-box {
-        padding: 0 0 40px;
+        padding: 0 0 2.5rem;
     }
 
+    /* 40px */
     .dist-img img {
-        width: 220px;
+        width: 13.75rem;
     }
 
-    .dist-img {
-        margin-top: -110px;
-    }
-
-    .dist-bottom-row ul li b {
-        font-size: 28px;
-    }
-
-    .sec-text {
-        padding: 0;
-    }
-
+    /* 220px */
     .footer-flex-box>div {
-        padding: 0 10px;
+        padding: 0 0.625rem;
     }
 
-    .star-rating {
-        font-size: 19px;
-    }
-
+    /* 10px */
     .menu-box {
-        padding: 50px 20px 30px 20px;
+        padding: 3.125rem 1.25rem 1.875rem;
     }
 
+    /* 50px 20px 30px */
     .menu-img {
-        width: 140px;
+        width: 8.75rem;
     }
+
+    /* 140px */
 }
 
+/* Extra small screens (max-width: 991px) */
 @media (max-width: 991px) {
     .js-parallax-scene {
         display: none;
     }
 
     .main-banner {
-        padding: 140px 0 60px;
+        padding: 8.75rem 0 3.75rem;
     }
 
+    /* 140px, 60px */
     .h1-title {
-        font-size: 60px;
-        line-height: 80px;
+        font-size: 3.75rem;
+        line-height: 5rem;
     }
 
+    /* 60px, 80px */
     .banner-img-wp {
         padding: 0;
         height: 75vw;
@@ -1366,18 +1410,6 @@ p {
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
     }
 
-    .sec-text {
-        margin-top: 40px;
-    }
-
-    .swiper-button-wp .swiper-button {
-        display: none !important;
-    }
-
-    .footer-info {
-        margin-bottom: 50px;
-    }
-
     .footer-flex-box {
         display: block;
         margin: 0;
@@ -1385,78 +1417,37 @@ p {
 
     .footer-flex-box>div {
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
-    .faq-box {
-        margin: 0;
-        margin-bottom: 30px;
-    }
-
-    .footer-flex-box>div:last-child {
-        margin: 0;
-    }
-
+    /* 30px */
     .scrolltop {
-        bottom: 130px;
+        bottom: 8.125rem;
     }
 
+    /* 130px */
     .footer-menu ul {
-        max-width: 300px;
+        max-width: 18.75rem;
     }
 
-    #gallery {
-        padding-top: 90px;
-    }
-
+    /* 300px */
     .swiper-pagination-bullet {
-        margin: 0 5px !important;
-        width: 8px;
-        height: 8px;
-    }
-
-    .swiper-pagination {
-        padding: 6px 20px;
+        margin: 0 0.3125rem !important;
+        /* 5px */
+        width: 0.5rem;
+        /* 8px */
+        height: 0.5rem;
+        /* 8px */
     }
 
     .swiper-button-wp {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
-    .swiper-pagination-bullet-active {
-        width: 16px;
-    }
-
-    .dish-title .h3-title {
-        display: block;
-        min-height: auto;
-        margin-bottom: 12px;
-    }
-
-    .menu-img {
-        width: 180px;
-        margin-inline: auto;
-        margin-bottom: 20px;
-    }
-
-    #js-scroll-content {
-        transform: unset !important;
-    }
-
-    body {
-        height: auto !important;
-    }
-
-    .menu-tab ul::-webkit-scrollbar {
-        height: 0;
-    }
-
-    .menu-tab {
-        position: relative;
-        display: flex;
-    }
+    /* 40px */
 }
 
+/* Mobile screens (max-width: 767px) */
 @media (max-width: 767px) {
     .banner-img-wp {
         height: 75vw;
@@ -1465,75 +1456,54 @@ p {
     }
 
     .dist-img img {
-        width: 180px;
+        width: 11.25rem;
     }
 
-    .dist-img {
-        margin-top: -80px;
-    }
-
-    .menu-tab-wp {
-        margin-bottom: 60px;
-    }
-
+    /* 180px */
     .dish-box {
-        margin: 80px 0 30px;
+        margin: 5rem 0 1.875rem;
     }
 
-    .book-table-img {
-        min-height: 340px;
-        height: 60vh;
-    }
-
+    /* 80px, 30px */
     .dish-info ul li p {
-        font-size: 16px;
-        line-height: 26px;
-        margin: 0;
+        font-size: 1rem;
+        line-height: 1.625rem;
     }
 
-    .dish-info ul li b {
-        font-size: 14px;
-    }
-
+    /* 16px, 26px */
     .menu-tab ul li {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
     }
+
+    /* 10px 20px */
 }
 
+/* Smallest screens (max-width: 575px) */
 @media (max-width: 575px) {
 
     .container,
     .container-fluid {
-        padding: 0 30px;
+        padding: 0 1.875rem;
     }
 
+    /* 30px */
     .h1-title {
-        font-size: 40px;
-        line-height: 60px;
-        margin-bottom: 20px;
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+        margin-bottom: 1.25rem;
     }
 
-    .h1-title span {
-        background-size: 100% 8px;
-    }
-
-    .banner-img-wp {
-        height: 90vw;
-    }
-
+    /* 40px, 60px */
     .dish-box {
-        max-width: 340px;
-        margin: 80px auto 30px;
-        padding: 0 0 30px;
+        max-width: 21.25rem;
+        margin: 5rem auto 1.875rem;
+        padding: 0 0 1.875rem;
     }
 
+    /* 340px, 30px */
     .menu-box {
         display: block;
         text-align: center;
-    }
-
-    .menu-box-right .dish-title .h3-title {
-        padding: 0;
     }
 
     .gallery-img {
@@ -1541,22 +1511,28 @@ p {
     }
 
     .contact-info a {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
     }
+
+    /* 18px, 28px */
 }
 
+/* Ultra small screens (max-width: 400px) */
 @media (max-width: 400px) {
 
     .container,
     .container-fluid {
-        padding: 0 15px;
+        padding: 0 0.9375rem;
     }
 
+    /* 15px */
     .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
     }
+
+    /* 60px */
 }
 
 /* Make sure the logo is responsive */
@@ -1564,22 +1540,4 @@ p {
     max-width: 100%;
     height: auto;
     /* Keeps the aspect ratio intact */
-}
-
-/* Optional: Adjust logo size for smaller screens */
-@media (max-width: 768px) {
-    .logo {
-        max-width: 80%;
-        /* You can adjust the max-width depending on how much space you want */
-        height: auto;
-    }
-}
-
-/* For very small screens like mobile */
-@media (max-width: 480px) {
-    .logo {
-        max-width: 70%;
-        /* Adjust as needed */
-        height: auto;
-    }
 }
